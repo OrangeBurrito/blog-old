@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Piazzolla:wght@700&family=Special+Elite&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Fira Code, arial;
+	background: #292B2E;
+	color: #BABABA;
+}
+
+main {
+	height: 100vh;
+  display: grid;
+  grid-template-rows: 100px 1fr 60px;
+  grid-gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.box {
+	background: #43494D;
+	border-radius: 5px;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem;
+}

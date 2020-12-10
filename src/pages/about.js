@@ -3,10 +3,10 @@ import Layout from '../components/layout'
 
 import '../styles/style.css'
 
-const IndexPage = () => (
-	<Layout title="Home">
-		Layout
+const AboutPage = () => (
+	<Layout title="About">
+		<div>About Me</div>
 	</Layout>
 )
 
-export default IndexPage
+export default AboutPage
