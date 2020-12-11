@@ -2,7 +2,7 @@ import React from "react"
 import {Link} from 'gatsby'
 import Layout from '../components/layout'
 
-import '../styles/blog-style.css'
+import '../styles/blog.css'
 
 export const pageQuery = graphql`
 query {
@@ -23,9 +23,9 @@ query {
 `
 
 const BlogPage = ({data}) => (
-	<Layout title="Blog">
+	<Layout title="Blog" headerStyle={{fontFamily: 'Special Elite', paddingTop: '10px'}}>
 		<section className="blog-page">
-		<div className="box">
+			<div className="box">
 			<h1>Latest Posts</h1>
 			{data.allMarkdownRemark.edges.map(post => (
 				<Link to={`/blog/${post.node.fields.slug}`} key={post.node.id}>

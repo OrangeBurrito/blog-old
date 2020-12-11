@@ -12,12 +12,14 @@ body {
 	color: #BABABA;
 }
 
-main {
+.wrap {
 	height: 100vh;
+	max-height: 100vh;
   display: grid;
   grid-template-rows: 100px 1fr 60px;
   grid-gap: 0.5rem;
-  padding: 0.5rem;
+	padding: 0.5rem;
+	border: 3px solid #fff;
 }
 
 .box {
@@ -26,6 +28,7 @@ main {
 }
 
 footer {
+	position: sticky;
 	display: flex;
 	align-items: center;
 	justify-content: center;

@@ -17,11 +17,13 @@ const Layout = (props) => {
 	`)
 	
   return (
-    <main>
-			<Header title={props.title}/>
-			{props.children}
+    <div className="wrap">
+			<Header title={props.title} headerStyle={props.headerStyle}/>
+			<div className="content">
+				{props.children}
+			</div>
 			<Footer/>
-    </main>
+    </div>
   )
 }
 

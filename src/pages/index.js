@@ -5,7 +5,7 @@ import '../styles/style.css'
 
 const IndexPage = () => (
 	<Layout title="Home">
-		Layout
+		
 	</Layout>
 )
 
