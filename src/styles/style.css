@@ -19,7 +19,6 @@ body {
   grid-template-rows: 100px 1fr 60px;
   grid-gap: 0.5rem;
 	padding: 0.5rem;
-	border: 3px solid #fff;
 }
 
 .box {
@@ -33,4 +32,17 @@ footer {
 	align-items: center;
 	justify-content: center;
 	font-size: 1.5rem;
+}
+
+/* .gatsby-resp-image-wrapper {
+	/* display: inline !important;
+	text-align: left; 
+}*/
+
+.gatsby-resp-image-image {
+	text-align: right;
+}
+
+.gatsby-resp-image-background-image {
+	transition: none !important;
 }

@@ -25,7 +25,7 @@ query {
 const BlogPage = ({data}) => (
 	<Layout title="Blog" headerStyle={{fontFamily: 'Special Elite', paddingTop: '10px'}}>
 		<section className="blog-page">
-			<div className="box">
+			<div className="latest-posts box">
 			<h1>Latest Posts</h1>
 			{data.allMarkdownRemark.edges.map(post => (
 				<Link to={`/blog/${post.node.fields.slug}`} key={post.node.id}>
@@ -34,6 +34,7 @@ const BlogPage = ({data}) => (
 				</Link>
 			))}
 		</div>
+		<div style={{backgroundImage: 'url(https://avatars3.githubusercontent.com/u/12551863?s=400&v=4)'}}></div>
 		<div className="box">All Posts</div>
 		</section>
 	</Layout>
