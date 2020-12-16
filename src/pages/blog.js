@@ -1,6 +1,7 @@
 import React from "react"
 import {Link} from 'gatsby'
 import Layout from '../components/layout'
+import PostsBar from '../components/postsbar'
 
 import '../styles/blog.css'
 
@@ -13,6 +14,7 @@ query {
 						title
 						date
 					}
+					html
 					fields {
 						slug
 					}
@@ -27,15 +29,10 @@ const BlogPage = ({data}) => (
 		<section className="blog-page">
 			<div className="latest-posts box">
 			<h1>Latest Posts</h1>
-			{data.allMarkdownRemark.edges.map(post => (
-				<Link to={`/blog/${post.node.fields.slug}`} key={post.node.id}>
-					<h3>{post.node.frontmatter.title}</h3>
-					<small>Posted on {post.node.frontmatter.date}</small>
-				</Link>
-			))}
+			{/* <div class="post-content content box" dangerouslySetInnerHTML={{__html: data.markdownRemark.html}}></div> */}
+			
 		</div>
-		<div style={{backgroundImage: 'url(https://avatars3.githubusercontent.com/u/12551863?s=400&v=4)'}}></div>
-		<div className="box">All Posts</div>
+		<PostsBar/>
 		</section>
 	</Layout>
 )

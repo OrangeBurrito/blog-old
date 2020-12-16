@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link, graphql} from 'gatsby'
 import Layout from '../components/layout'
+import PostsBar from '../components/postsbar'
 import '../styles/blog.css'
 
 export const query = graphql`
@@ -21,7 +22,7 @@ const Blog = (props) => {
 			<section class="post-wrap">
 
 				<div class="post-header">
-					<div class="header-name box">
+					<div class="header-name box level">
 						<h1>{props.data.markdownRemark.frontmatter.title}</h1>
 						<p>{props.data.markdownRemark.frontmatter.date}</p>		
 					</div>
@@ -31,7 +32,8 @@ const Blog = (props) => {
 
 				<div class="post-content content box" dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}></div>
 
-				<div className="post-aside box">Read More</div>
+				{/* <div className="post-aside box">Read More</div> */}
+				<PostsBar/>
 			</section>
 			{/* <section class="blog-posts">
 				<div className="blog-header box">
