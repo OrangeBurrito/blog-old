@@ -1,13 +1,3 @@
-<p align="center">
-  <a href="orangeburrito.com/blog">
-    <img alt="Paper with a blue pin attached to it" src="https://64.media.tumblr.com/361830e653b4ddcbf7b0a28c649a0a41/tumblr_pwtpbtqnKN1tsxrbyo1_400.png" width="60"/>
-  </a>
-</p>
 <h1 align="center">
-  OrangeBurrito's Blog
+  This repo is no longer being worked on, check out the current repo [here](github.com/OrangeBurrito/blog)
 </h1>
-
-This is my blog site repo. (still a work-in-progress)
-I write about whatever comes to mind
-
-[_Visit my blog here!_](orangeburrito.com/blog)
